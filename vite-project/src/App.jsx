@@ -1,9 +1,8 @@
-import React from 'react'
+import PracUseState from "./PracUseState";
 
 function App() {
-    const test = 1;
   return (
-    <div>App {test}</div>
+    <PracUseState />
     )
 }
 
