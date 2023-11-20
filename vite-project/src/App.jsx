@@ -1,8 +1,8 @@
-import PracUseState from "./PracUseState";
+import Prac from "./Prac.jsx";
 
 function App() {
   return (
-    <PracUseState />
+    <Prac />
     )
 }
 

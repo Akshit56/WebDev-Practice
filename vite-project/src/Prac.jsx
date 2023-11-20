@@ -1,20 +1,21 @@
 import { useState } from "react";
-function PracUseState() {
-  const [name, setName] = useState("");
-  const [age, setAge] = useState("");
-  const [title, setTitle] = useState("");
-  const [money, setMoney] = useState("");
+function Prac(){
+    
+    const[name, setName] = useState("");
+    const[age, setAge] = useState("");
+    const[title, setTitle] = useState("");
+    const[money, setMoney] = useState("");
 
-  const handleMoney = (event) => setMoney(event.target.value);
+    const handleMoney = (event) => setMoney(event.target.value)
+    const handleSubmit = () => {
+        console.log(name);
+        console.log(age);
+        console.log(title);
+        console.log(money);
+    };
+    return(
 
-  const handleSubmit = () => {
-    console.log(name);
-    console.log(age);
-    console.log(title);
-    console.log(money);
-  };
-  return (
-    <div className="container">
+        <div className="container">
       <input type="text" className="Search" placeholder="Search for Content" />
       <input
         type="text"
@@ -51,11 +52,14 @@ function PracUseState() {
         Submit
       </button>
       <div>
-        <h2>
-          {name} {age} {title} {money}
-        </h2>
-      </div>
+        <h2>{name} {age} {title} {money}</h2>
+        
+        
+      </div>  
     </div>
-  );
+
+
+    );
+
 }
-export default PracUseState;
+export default Prac;
